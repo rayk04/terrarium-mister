@@ -8,8 +8,8 @@
 #define DHTTYPE DHT11
 
 // WiFi credentials
-const char* ssid = "memes";
-const char* password = "applepie180";
+const char* ssid = "YOUR_SSID_HERE";
+const char* password = "YOUR_PASSWORD_HERE";
 
 // Motor control pins
 const int IN1 = 14; // GPIO 14 - D5
@@ -93,6 +93,7 @@ void setup() {
   setMotorState(false);
 
   // Static IP configuration
+  // Change this to your IP information by running "ipconfig" in the command prompt.
   IPAddress local_IP(192, 168, 1, 200); // Static IP address
   IPAddress gateway(192, 168, 1, 1);    // Router's gateway
   IPAddress subnet(255, 255, 255, 0);   // Subnet mask
