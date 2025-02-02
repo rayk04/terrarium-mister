@@ -21,7 +21,7 @@ Hardware setup will vary depending on chosen power supply and whether you use an
 4. Pin D2 to DHT11 data pin
 5. 12V positive and negative from power supply to 12V and GND on L298N
 6. 5V from L298N to ESP Vin (also ground the ESP!)
-**Important Note:** Do **not** plug in the USB port while the ESP board is powered by an external supply.
+* **Important Note:** Do **not** plug in the USB port while the ESP board is powered by an external supply.
 7. 3v3 on ESP to Vin on the DHT11 (also ground the DHT11!)
 8. OUT1 on the L298N to the positive terminal of the pump
 9. OUT2 on the L298N to the negative terminal of the pump
