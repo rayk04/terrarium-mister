@@ -21,7 +21,7 @@ Hardware setup will vary depending on chosen power supply and ESP32/ESP8266. For
 4. Pin D2 to DHT11 data pin
 5. 12V positive and negative to 12V and GND on L298N
 6. 5V from L298N to ESP Vin (also ground the ESP!)
-..* Note: only connect the 5V from the L298N board to the ESP after setup or  risk USB port damage.
+* Note: only connect the 5V from the L298N board to the ESP after setup or  risk USB port damage.
 7. 3v3 on ESP to Vin on the DHT11 (also ground the DHT11!)
 8. OUT1 on the L298N to the positive terminal of the pump
 9. OUT2 on the L298N to the negative terminal of the pump
@@ -31,5 +31,5 @@ You will need to make some modifications to the main code before flashing it to 
 1. Set "YOUR_SSID" to your network SSID.
 2. Set "YOUR_PASSWORD" to your network password.
 3. Run "ipconfig" in your command prompt and adjust the local_IP, gateway, and subnet objects as needed.
-..* Note taht the IP you use will be the address you enter on your browser to modify the humidity settings.
+* Note that the IP you enter here will be the address you enter on your browser to modify the humidity settings.
 4. Modify the motorSpeed variable if your pump does not draw water or draws too much. 130 is a safe starting point.
