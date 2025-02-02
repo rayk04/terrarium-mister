@@ -32,8 +32,9 @@ You will need to make some modifications to the main code before flashing it to 
 1. Set "YOUR_SSID" to your network SSID.
 2. Set "YOUR_PASSWORD" to your network password.
 3. Run "ipconfig" in your command prompt and adjust the local_IP, gateway, and subnet objects as needed.
-* Note that the IP you enter here will be the address you enter on your browser to modify the humidity settings.
 4. Modify the motorSpeed variable if your pump does not draw water or draws too much. 130 is a safe starting point.
+5. Upload the code to the ESP board through Arduino IDE.
+6. Enter the IP address you specified in step 3 into a web browser to view the interface and set the humidity.
 ### Additional Modifications
 * You can 3D print an enclosure for the components for a cleaner look. I've included the STL file in the repository.
 ### Demo
