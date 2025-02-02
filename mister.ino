@@ -6,11 +6,20 @@
 
 #define DHTPIN 4 // GPIO 4 - D2
 #define DHTTYPE DHT11
-
+//-------------------------Values to modify--------------------------------------
 // WiFi credentials
 const char* ssid = "YOUR_SSID_HERE";
 const char* password = "YOUR_PASSWORD_HERE";
 
+// Static IP configuration
+IPAddress local_IP(192, 168, 1, 200); // Static IP address
+// Change this to your IP information by running "ipconfig" in the command prompt
+IPAddress gateway(192, 168, 1, 1);    // Router's gateway
+IPAddress subnet(255, 255, 255, 0);   // Subnet mask
+
+// Adjust motor speed
+int motorSpeed = 130;
+//--------------------------------------------------------------------------------
 // Motor control pins
 const int IN1 = 14; // GPIO 14 - D5
 const int IN2 = 12; // GPIO 12 - D6
@@ -87,16 +96,9 @@ void setup() {
 
   // Initialize DHT sensor
   dht.begin();
-
   // Initialize motor
-  motor.setSpeed(130);
+  motor.setSpeed(motorSpeed);
   setMotorState(false);
-
-  // Static IP configuration
-  // Change this to your IP information by running "ipconfig" in the command prompt.
-  IPAddress local_IP(192, 168, 1, 200); // Static IP address
-  IPAddress gateway(192, 168, 1, 1);    // Router's gateway
-  IPAddress subnet(255, 255, 255, 0);   // Subnet mask
 
   if (!WiFi.config(local_IP, gateway, subnet)) {
     Serial.println("Static IP configuration failed!");
