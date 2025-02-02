@@ -25,7 +25,7 @@ Hardware setup will vary depending on chosen power supply and ESP32/ESP8266. For
 7. 3v3 on ESP to Vin on the DHT11 (also ground the DHT11!)
 8. OUT1 on the L298N to the positive terminal of the pump
 9. OUT2 on the L298N to the negative terminal of the pump
-
+![alt-text](https://github.com/rayk04/terrarium-mister/blob/main/Mister%20schematic.png)
 ### Software Setup
 You will need to make some modifications to the main code before flashing it to your ESP board.
 1. Set "YOUR_SSID" to your network SSID.
