@@ -25,6 +25,7 @@ Hardware setup will vary depending on chosen power supply and ESP32/ESP8266. For
 7. 3v3 on ESP to Vin on the DHT11 (also ground the DHT11!)
 8. OUT1 on the L298N to the positive terminal of the pump
 9. OUT2 on the L298N to the negative terminal of the pump
+#### Schematic
 ![alt-text](https://github.com/rayk04/terrarium-mister/blob/main/Mister%20schematic.png)
 ### Software Setup
 You will need to make some modifications to the main code before flashing it to your ESP board.
@@ -33,3 +34,8 @@ You will need to make some modifications to the main code before flashing it to 
 3. Run "ipconfig" in your command prompt and adjust the local_IP, gateway, and subnet objects as needed.
 * Note that the IP you enter here will be the address you enter on your browser to modify the humidity settings.
 4. Modify the motorSpeed variable if your pump does not draw water or draws too much. 130 is a safe starting point.
+### Additional Modifications
+* You can 3D print an enclosure for the components for a cleaner look. I've included the STL file in the repository.
+### Demo
+See the video for a demonstration of the device.
+* [Video link](To be added)
