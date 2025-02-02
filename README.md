@@ -14,7 +14,7 @@ This automated terrarium mister moderates the humidity of a small enclosure, whi
 * 1/4" mister attachment
 
 ### Hardware Setup
-Hardware setup will vary depending on chosen power supply and ESP32/ESP8266. For an ESP8266 and 12 volt power supply, connect pins as follows.
+Hardware setup will vary depending on chosen power supply and whether you use an ESP32/ESP8266. For an ESP8266 and 12 volt power supply, connect pins as follows.
 1. Pin D5 to IN1
 2. Pin D6 to IN2
 3. Pin D1 to ENA
